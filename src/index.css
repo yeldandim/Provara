@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.va-v {
+  animation: slideV 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.va-a {
+  animation: slideA 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes slideV {
+  0% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideA {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
